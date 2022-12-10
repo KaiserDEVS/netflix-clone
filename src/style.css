@@ -201,8 +201,8 @@ section h1 {
 .header-main #inputtext {
   margin-left: 50rem;
   background-color: transparent;
-  border: 2px solid white;
-  padding: 1px 2px;
+  border: 1px solid white;
+  outline: none;
   color: white;
   font-family: "Poppins", sans-serif;
   border-radius: 3px;
@@ -212,6 +212,12 @@ section h1 {
 .header-main #inputtext:active {
   border-radius: 3px;
   border: none;
+  outline: none;
+  border: 1px solid red;
+}
+
+.header-main #inputtext:hover {
+  border: 1px solid red;
 }
 
 @media (max-width: 1830px) {
@@ -272,5 +278,24 @@ section h1 {
 
   section {
     height: 285rem;
+  }
+}
+
+#menuHamburger {
+  display: block;
+}
+
+#navbar {
+  display: none;
+}
+
+@media (max-width: 775px) {
+
+  #menuHamburger {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
   }
 }
